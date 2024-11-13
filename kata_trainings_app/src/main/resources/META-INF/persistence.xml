@@ -5,6 +5,7 @@
         <class>pl.gatomek.entity.Training</class>
         <class>pl.gatomek.entity.User</class>
         <class>pl.gatomek.entity.Review</class>
+        <class>pl.gatomek.entity.Retrospection</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost/db?useUnicode=true&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useSSL=false" />
