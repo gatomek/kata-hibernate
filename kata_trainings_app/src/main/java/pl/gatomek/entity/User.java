@@ -7,10 +7,11 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
-@ToString
 @EqualsAndHashCode
 @Entity
 @Table( name="user")
@@ -21,5 +22,19 @@ public class User {
     private String name;
     private String lastName;
     private LocalDateTime created;
+
+    @ManyToMany( mappedBy = "users")
+    private Set<Training> trainings = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", created=" + created +
+                ", trainings=" + trainings.stream().map( Training::getId).toList() +
+                '}';
+    }
 }
 

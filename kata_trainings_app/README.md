@@ -1,5 +1,5 @@
 # Functional backlog
-* add OneToMany Bidirectional Mapping (Training -> Retrospection)
+* add OneToMany Bidirectional Mapping (Training -> Note)
 * add ManyToMany Mapping (Training - Users)
 
 # Technical backlog

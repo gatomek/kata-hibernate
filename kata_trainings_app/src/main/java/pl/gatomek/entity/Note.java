@@ -9,8 +9,8 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode
 @Entity
-@Table(name = "retrospection")
-public class Retrospection {
+@Table(name = "note")
+public class Note {
 
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
@@ -20,18 +20,18 @@ public class Retrospection {
     @ManyToOne( fetch = FetchType.LAZY)
     private Training training;
 
-    public Retrospection() {
+    public Note() {
     }
 
-    public Retrospection( String text) {
+    public Note(String text) {
         setText( text);
     }
 
     @Override
     public String toString() {
-        return "Retrospection{" +
-                "id=" + id +
-                ", text='" + text + '\'' +
-                '}';
+        return "Note{"
+                + "id=" + id
+                + ", text='" + text + "'"
+                + '}';
     }
 }

@@ -5,7 +5,8 @@
         <class>pl.gatomek.entity.Training</class>
         <class>pl.gatomek.entity.User</class>
         <class>pl.gatomek.entity.Review</class>
-        <class>pl.gatomek.entity.Retrospection</class>
+        <class>pl.gatomek.entity.Note</class>
+        <class>pl.gatomek.entity.Details</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost/db?useUnicode=true&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useSSL=false" />
@@ -13,7 +14,7 @@
             <property name="jakarta.persistence.jdbc.password" value="password" />
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.show_sql" value="false" />
             <property name="hibernate.format_sql" value="true" />
             <property name="hibernate.hbm2dll.auto" value="validate"/>
         </properties>

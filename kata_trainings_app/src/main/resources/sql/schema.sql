@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
     `id` BIGINT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(50),
-    `dateTime` DATETIME,
+    `created` DATETIME,
     `lastName` VARCHAR(50),
     PRIMARY KEY (`id`)
 );
@@ -29,15 +29,33 @@ CREATE TABLE `review` (
     ON UPDATE  CASCADE
 );
 
-DROP TABLE IF EXISTS `retrospection`;
-CREATE TABLE `retrospection` (
+DROP TABLE IF EXISTS `note`;
+CREATE TABLE `note` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
   `training_id` BIGINT NOT NULL ,
   `text` VARCHAR(400) NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_retrospection_training`
+  CONSTRAINT `fk_note_training`
       FOREIGN KEY ( `training_id`)
-          REFERENCES `training` (`id`)
-          ON DELETE CASCADE
-          ON UPDATE  CASCADE
+      REFERENCES `training` (`id`)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
+
+DROP TABLE IF EXISTS `details`;
+CREATE TABLE `details` (
+   `id` BIGINT NOT NULL AUTO_INCREMENT,
+   `points` BIGINT NULL,
+   PRIMARY KEY (`id`)
+);
+
+Alter table `training` add column `details_id` BIGINT Null;
+
+drop table if exists `training_user`;
+create table `training_user` (
+    `training_id` BIGINT NOT NULL,
+    `user_id` BIGINT NOT NULL,
+    primary key (`training_id`, `user_id`),
+    constraint `fk_training_user_training` foreign key (`training_id`) references `training` (`id`),
+    constraint `fk_training_user_user` foreign key (`user_id`) references `user` (`id`)
+)
