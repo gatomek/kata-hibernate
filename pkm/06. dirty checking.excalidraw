@@ -1,0 +1,82 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "6zIbWjXhOOZm-FHUaZpq1",
+      "type": "ellipse",
+      "x": 558,
+      "y": 529.2000122070312,
+      "width": 221.17498779296875,
+      "height": 208.762451171875,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffec99",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1203692947,
+      "version": 66,
+      "versionNonce": 783895987,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "MGutWgFqtMNGKxo2OSmZk"
+        }
+      ],
+      "updated": 1731090644221,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "MGutWgFqtMNGKxo2OSmZk",
+      "type": "text",
+      "x": 601.4483562226591,
+      "y": 588.7725653525896,
+      "width": 133.88394165039062,
+      "height": 90,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 972872083,
+      "version": 97,
+      "versionNonce": 295339581,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1731090643026,
+      "link": null,
+      "locked": false,
+      "text": "dirty \nchecking",
+      "fontSize": 36,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "baseline": 76,
+      "containerId": "6zIbWjXhOOZm-FHUaZpq1",
+      "originalText": "dirty checking",
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
